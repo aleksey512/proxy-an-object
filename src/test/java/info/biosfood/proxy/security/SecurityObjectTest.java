@@ -17,7 +17,7 @@ public class SecurityObjectTest {
     }
 
     @Test
-    public void testCallingSecuredMethodsWithDefaultAccessLevel() {
+    public void testCallingSecuredMethodsWithDefaultSecurityLevel() {
         LOG.debug("\n\n-- calling all methods with default access level");
 
         Context.getInstance().userName = "DEFAULT";
@@ -39,7 +39,7 @@ public class SecurityObjectTest {
     }
 
     @Test
-    public void testCallingSecuredMethodsWithExperiencedSecutiryLevel() {
+    public void testCallingSecuredMethodsWithExperiencedSecurityLevel() {
         LOG.debug("\n\n-- calling all methods with experienced access level");
 
         Context.getInstance().userName = "EXPERIENCED";
@@ -56,7 +56,7 @@ public class SecurityObjectTest {
     }
 
     @Test
-    public void testCallingSecuredMethodsWithHighSecurityLevel() {
+    public void testCallingSecuredMethodsWithRootSecurityLevel() {
         LOG.debug("\n\n-- calling all methods with root access level");
 
         Context.getInstance().userName = "ROOT";
