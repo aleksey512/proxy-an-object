@@ -1,10 +1,3 @@
-package info.biosfood.proxy.security;
-
-import org.apache.log4j.Logger;
-
-/**
- * The class can be created only by SecuredObjectFactory
- * */
 public class SecuredObject {
 
     private static final Logger LOG = Logger.getLogger(SecuredObject.class);
@@ -14,8 +7,8 @@ public class SecuredObject {
     }
 
     @Security(role = SecurityRole.ROOT)
-    public void highSecurityMethod() {
-        LOG.debug("hello from highSecurityMethod");
+    public void highlySecurityMethod() {
+        LOG.debug("hello from highlySecurityMethod");
     }
 
     @Security(role = SecurityRole.EXPERIENCED)
